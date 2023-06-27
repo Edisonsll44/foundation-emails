@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago rechazado</title>
+      <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
+    <style>
+        @media only screen and (max-width: 600px) {
+          .column,
+          .gutter {
+            display: block !important;
+          }
+   
+          .column {
+            width: 450px !important;
+          }
+   
+          .column img {
+            width: 450px;
+          }
+        }
+        body {
+            font-family:Helvetica;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .table-module {
+            width:700px;
+            border:0;
+            border-collapse:collapse;
+            border-spacing:0;
+            background-image: url('https://0z9wo.mjt.lu/tplimg/0z9wo/b/mwu3p/6jzqy.png');
+        }
+      </style>
+</head>
+<body>
+    <table class="table-module">
+        <tr>
+            <table class="table-module">
+                <tr style="text-align: center;">
+                    <td class="divider" style="height: 10px">&nbsp;</td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td style="background-image: url('https://raw.githubusercontent.com/Edisonsll44/img/main/HeaderRechazado.png');
+                    background-repeat: no-repeat;
+                    height:181px;
+                    width:700px;">
+                        <span style="font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 18px;
+                        align-items: center;
+                        text-align: center;
+                        color: #211F1E;
+                        margin-bottom: 75px;
+                        padding-left: 21px;
+                        display: inline-block;">Hola, {{var:username:""}}</span>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="table-module">
+                <tr>
+                    <td style="padding-left:129px;">
+                        <span >
+                            <p style="font-style: normal; 
+                            font-weight: 700; 
+                            font-size: 20px;
+                            line-height: 23px;"> Detalle de la transacción
+                        </span>
+                    </td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td class="divider" style="font-size: 4px;">&nbsp;</td>
+                </tr>
+            </table>
+
+            <table class="table-module">
+                <tr>          
+                    <td style="padding-left:129px;">
+                        <span style=" width: 470px;
+                        display: inline-block;
+                        border: 2px solid #211F1E;
+                        border-radius: 10px;
+                        height: 162px;">
+
+                            <table style="width: 470px;border: none;border-spacing: 0;">
+                                <tr>
+                                    <td style=" color: #211F1E;
+                                    font-size: 16px;
+                                    margin-left: 22px;
+                                    margin-top: 25px;
+                                    font-weight: 400;
+                                    line-height: 18px;
+                                    text-align: left;
+                                    vertical-align: top;
+                                    display: inline-block;
+                                    width: 35%;">Referencia:</td>
+                                    <td style="display: inline-block;
+                                    vertical-align: bottom;
+                                    color: #211F1E;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 18px;
+                                    text-align: right;
+                                    width: 50%;">{{var:reference:""}}</td>
+                                </tr>
+                                <tr>
+                                    <td style=" color: #211F1E;
+                                    font-size: 16px;
+                                    margin-left: 22px;
+                                    margin-top: 25px;
+                                    font-weight: 400;
+                                    line-height: 18px;
+                                    text-align: left;
+                                    vertical-align: top;
+                                    display: inline-block;
+                                    width: 35%;">Fecha:</td>
+                                    <td style="display: inline-block;
+                                    vertical-align: bottom;
+                                    color: #211F1E;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 18px;
+                                    text-align: right;
+                                    width: 50%;">{{var:date:""}}</td>
+                                </tr>
+                                <tr>
+                                    <td style=" color: #211F1E;
+                                    font-size: 16px;
+                                    margin-left: 22px;
+                                    margin-top: 25px;
+                                    font-weight: 400;
+                                    line-height: 18px;
+                                    text-align: left;
+                                    vertical-align: top;
+                                    display: inline-block;
+                                    width: 35%;">Monto:</td>
+                                    <td style="display: inline-block;
+                                    vertical-align: bottom;
+                                    color: #211F1E;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 18px;
+                                    text-align: right;
+                                    width: 50%;">{{var:amount:""}}</td>
+                                </tr>
+                            </table>
+                        </span>
+                    </td> 
+                </tr>
+                <tr style="text-align: center;">
+                    <td class="divider" style="font-size: 4px;">&nbsp;</td>
+                </tr>
+            </table>
+
+            <table class="table-module">
+                <tr>
+                    <td>
+                        <a href="mailto: servicioposventa@placetopay.ec">
+                        <img src="https://raw.githubusercontent.com/Edisonsll44/img/main/Frame%2027.png">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </tr>
+    </table>
+</body>
+</html>

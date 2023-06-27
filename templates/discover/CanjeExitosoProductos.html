@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanjeExitosoProductos</title>
+      <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
+    <style>
+        @media only screen and (max-width: 600px) {
+          .column,
+          .gutter {
+            display: block !important;
+          }
+   
+          .column {
+            width: 450px !important;
+          }
+   
+          .column img {
+            width: 450px;
+          }
+        }
+        body {
+            font-family:Helvetica;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .table-module {
+            width:700px;
+            border:0;
+            border-collapse:collapse;
+            border-spacing:0;
+            background-image: url('https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/header/FondoBlanco.png');
+        }
+      </style>
+</head>
+<body>
+    <table class="table-module">
+        <tr>
+            <td>
+                <table class="table-module">
+                    <tr style="text-align: center;">
+                        <td class="divider" style="height: 10px">&nbsp;</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td id="header" style=" background-image: url('https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/header/HeaderCanjeCopago.png');background-repeat: no-repeat;height:181px;width:700px;">
+                            <span style="font-style: normal;font-weight: 700;font-size: 16px;line-height: 18px;align-items: center;text-align: center;color: #211F1E !important;margin-bottom: 75px;padding-left: 21px;display: inline-block;">
+                            Hola, {{var:username:""}}</span>
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td style="height: 10px;">&nbsp;</td>
+                    </tr>
+                </table>
+
+                <span style="padding-left:131px; background: #FFFF !important;">
+                    <p style="padding-left:131px; font-style: normal;font-weight: 700;font-size: 18px;line-height: 21px;color: #211F1E !important;">Detalle del producto</p>                     
+                    <span style=" width: 470px;height: 243px;">
+                        <div style="color: #798083 ;  border-radius: 10px;background:#FBFBFB !important">
+                            {% for product in var:order_lines %}
+                            <div style=" border: 2px solid #211F1E;border-radius: 10px; margin: 2% 19%;width: 470px;">
+                                <div >
+                                    <img src="{{product.image}}" style="width: 69px;height: 69px;background: url(placeholder-image), #FAFAFA;padding: 30px 30px 30px 30px;vertical-align: top;display: inline-block;margin-top: 5px;margin-left: 5px;filter: brightness(1.1);mix-blend-mode: multiply;">
+                                    <p style="font-family: Helvetica!important; font-size: 18px; font-weight: normal;line-height: 21px;text-align: center; color: #211F1E !important; padding: 0 0 5px 0;vertical-align: top;display: inline-block;margin-top: 54px;max-width: 25ch;">{{product.product_name}}</p>
+                                </div>
+                                <div style="margin: 0px;">
+                                    <div>
+                                        <p style="font-family: Helvetica !important; font-size: 16px; font-weight: normal;text-align: left; color: #211F1E !important; padding: 5px !important;">
+                                            <span style="margin-left: 22px !important;">Cantidad: </span>
+                                            <span style="display: inline-block;vertical-align: bottom;color: #211F1E!important;text-align: right;width: 70%;">{{product.quantity}}</span>
+                                        </p>
+                                        <div style="width: 90%;">
+                                            <hr style="border: 2px solid #211F1E;margin-left: 25px;">
+                                        </div>
+                                        <p style="font-family: Helvetica !important; font-size: 16px; font-weight: normal;text-align: left; color: #211F1E!important; padding: 5px !important;">
+                                            <span style="margin-left: 22px !important;">Millas canjeadas: </span>
+                                            <span style="display: inline-block;vertical-align: bottom;color: #211F1E!important;text-align: right;width: 58%;">{{product.points_amount}}</span>
+                                        </p>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>{% endfor %}<br>
+                    </span>
+                </span> 
+
+                <table class="table-module" style="background: #FBFBFB !important;border-radius: 12px;">
+                    <tr>          
+                        <td style="padding-left:129px;"> 
+                            <span>
+                                <p style="font-style: normal;font-weight: 700;font-size: 18px;line-height: 21px;color: #211F1E !important;">Detalle del canje</p>  
+                            </span>  
+                            <span style=" width: 470px;display: inline-block;border: 2px solid #211F1E !important;border-radius: 10px;height: 54px;background: #CCF3F5 !important;">
+                                <table style="width: 470px;border: none;border-spacing: 0;">
+                                    <tr>
+                                        <td style=" color: #211F1E !important;
+                                        font-size: 16px;
+                                        margin-left: 22px;
+                                        margin-top: 17px;
+                                        font-weight: 400;
+                                        line-height: 18px;
+                                        text-align: left;
+                                        vertical-align: top;
+                                        display: inline-block;
+                                        width: 35%;">Cashback canjeado:</td>
+                                        <td style="display: inline-block;
+                                        vertical-align: bottom;
+                                        color: #211F1E !important;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        line-height: 18px;
+                                        text-align: right;
+                                        width: 50%;">{{var:total_points_amount:""}}</td>
+                                    </tr>
+                                </table>
+                            </span>
+                        </td> 
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td style="height: 20px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="margin-left: 126px;margin-top: 9px;vertical-align: top;display: inline-block;width: 67%;">
+                            <hr style="border: 2px solid #211F1E;">
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td style="height: 30px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left:129px;"> 
+                            <span>
+                                <p style="font-style: normal;font-weight: 700;font-size: 18px;line-height: 21px;color: #211F1E !important;">Términos y condiciones</p>  
+                                <ul style="font-weight: 400;font-size: 14px;line-height: 16px;font-style: normal;margin-left: -25px;display: inline-block;margin-top: -4px;color: #211F1E !important;">
+                                    <li>Los productos serán entregados en máximo 15 días laborables.</li>
+                                </ul>  
+                            </span>  
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td style="height: 50px;">&nbsp;</td>
+                    </tr>
+                </table>
+
+                <table class="table-module">
+                    <tr style="text-align: center;">
+                        <td style="height: 10px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="footer" style=" background-image: url('https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/footer/Necesitas_Ayuda_ConLogo_Whatsapp.png');
+                        background-repeat: no-repeat;height: 210px;">
+                            <a href="https://www.dinersclub.com.ec/centro-de-soporte/call-center">
+                                <span style="margin-bottom: 137px;
+                                padding-left: 250px;
+                                cursor: pointer;
+                                display: inline-block;
+                                height: 50px;"></spam>
+                            </a>
+                            <span style=" vertical-align: bottom;display: inline-block;margin-left: 250px;margin-bottom: 77px;">
+                                <a style=" border: 0px solid #000000;border-radius: 36px;" href="https://twitter.com/discoverecu?s=21&t=RhDLOB1Gi5VRakyuwoiC8g">
+                                    <img id="twitter" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/footer/RedesSociales/twt.png" style="margin-right: 7px;">
+                                </a>
+                            
+                                <a style=" border: 0px solid #000000;border-radius: 36px;" href="https://www.facebook.com/DiscoverEC?mibextid=LQQJ4d">
+                                    <img id="facebook" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/footer/RedesSociales/fb.png" style="margin-right: 7px;">
+                                </a>
+                        
+                                <a style=" border: 0px solid #000000;border-radius: 36px;" href="https://instagram.com/discover_ec?igshid=NTc4MTIwNjQ2YQ==">
+                                    <img id="instagram" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/footer/RedesSociales/ig.png" style="margin-right: 7px;">
+                                </a>
+                            
+                                <a style=" border: 0px solid #000000;border-radius: 36px;" href="https://youtube.com/@DiscoverEcuador">
+                                    <img id= "youtube" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/footer/RedesSociales/ytb.png" style="margin-right: 7px;">
+                                </a>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
